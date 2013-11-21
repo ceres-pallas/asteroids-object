@@ -1,14 +1,14 @@
 {
-  "name": "asteroids-bag",
+  "name": "asteroids-object",
   "version": "0.0.0",
-  "description": "An implementation of a bag tailored to Asteroids",
-  "main": "lib/bag.js",
+  "description": "An object to know its position in the Asteroids world",
+  "main": "lib/object.js",
   "scripts": {
     "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ceres-pallas/asteroids-bag.git"
+    "url": "git://github.com/ceres-pallas/asteroids-object.git"
   },
   "keywords": [
     "asteroids",
@@ -17,7 +17,7 @@
   "author": "Daan van Berkel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ceres-pallas/asteroids-bag/issues"
+    "url": "https://github.com/ceres-pallas/asteroids-object/issues"
   },
   "devDependencies": {
     "mocha": "~1.14.0",
