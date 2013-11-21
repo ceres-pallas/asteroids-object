@@ -1,4 +1,4 @@
-asteroids-bag
-=============
+Asteroids Object
+================
 
-An implementation of a bag tailored to Asteroids
+An object to know its position in the Asteroids world.
