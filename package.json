@@ -4,7 +4,7 @@
   "description": "An implementation of a bag tailored to Asteroids",
   "main": "lib/bag.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
