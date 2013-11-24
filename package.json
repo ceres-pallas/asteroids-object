@@ -1,6 +1,6 @@
 {
   "name": "asteroids-object",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An object to know its position in the Asteroids world",
   "main": "lib/object.js",
   "scripts": {
