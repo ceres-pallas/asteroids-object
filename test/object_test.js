@@ -22,7 +22,7 @@ describe('BaseObject', function(){
 	    base = new BaseObject();
 	});
 
-	['x', 'y', 'position'].forEach(function(methodName){
+	['x', 'y', 'position', 'tick'].forEach(function(methodName){
 	    it('should respond to ' + methodName, function(){
 		expect(base).to.respondTo(methodName);
 	    });
