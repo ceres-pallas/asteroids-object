@@ -22,7 +22,7 @@ describe('BaseObject', function(){
 	    base = new BaseObject();
 	});
 
-	['x', 'y', 'position', 'tick'].forEach(function(methodName){
+	['x', 'y', 'radius', 'position', 'tick'].forEach(function(methodName){
 	    it('should respond to ' + methodName, function(){
 		expect(base).to.respondTo(methodName);
 	    });
@@ -80,6 +80,18 @@ describe('BaseObject', function(){
 
 	    base.position({ y: 1 });
 	    expect(base.position()).to.deep.equal({ x: 1, y: 1 });
+	});
+
+	it('should have a default \'radius\'', function(){
+	    expect(base.radius()).to.equal(1);
+	});
+
+	it('should be able to set \'radius\'', function(){
+	    var value = 5;
+
+	    base.radius(value);
+
+	    expect(base.radius()).to.equal(value);
 	});
 
 	[
