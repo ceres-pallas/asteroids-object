@@ -94,6 +94,11 @@ describe('BaseObject', function(){
 	    expect(base.radius()).to.equal(value);
 	});
 
+	it('should notify of \'radius\' change', function(done){
+	    base.addListener('radius', done);
+
+	    base.radius(5);
+ 	});
 
 	it('should have a default \'orientation\'', function(){
 	    expect(base.orientation()).to.equal(0);
@@ -106,6 +111,12 @@ describe('BaseObject', function(){
 
 	    expect(base.orientation()).to.equal(value);
 	});
+
+	it('should notify of \'orientation\' change', function(done){
+	    base.addListener('orientation', done);
+
+	    base.orientation(Math.PI/2);
+ 	});
 
 	[
 	    function(base){ base.x(1); },
