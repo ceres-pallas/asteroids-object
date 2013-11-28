@@ -22,7 +22,7 @@ describe('BaseObject', function(){
 	    base = new BaseObject();
 	});
 
-	['x', 'y', 'radius', 'position', 'tick'].forEach(function(methodName){
+	['x', 'y', 'radius', 'position', 'orientation', 'tick'].forEach(function(methodName){
 	    it('should respond to ' + methodName, function(){
 		expect(base).to.respondTo(methodName);
 	    });
@@ -92,6 +92,19 @@ describe('BaseObject', function(){
 	    base.radius(value);
 
 	    expect(base.radius()).to.equal(value);
+	});
+
+
+	it('should have a default \'orientation\'', function(){
+	    expect(base.orientation()).to.equal(0);
+	});
+
+	it('should be able to set \'orientation\'', function(){
+	    var value = Math.PI/3;
+
+	    base.orientation(value);
+
+	    expect(base.orientation()).to.equal(value);
 	});
 
 	[
