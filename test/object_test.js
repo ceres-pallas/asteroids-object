@@ -131,5 +131,46 @@ describe('BaseObject', function(){
                 mutator(base);
             });
         });
+
+		it('should be able to set orientation to 0', function(){
+			base.orientation(1);
+
+			base.orientation(0);
+
+			expect(base.orientation()).to.equal(0);
+		});
+
+		it('should be able to set radius to 0', function(){
+			base.radius(1);
+
+			base.radius(0);
+
+			expect(base.radius()).to.equal(0);
+		});
+
+		it('should be able to set x to 0', function(){
+			base.x(1);
+
+			base.x(0);
+
+			expect(base.x()).to.equal(0);
+		});
+
+		it('should be able to set y to 0', function(){
+			base.y(1);
+
+			base.y(0);
+
+			expect(base.y()).to.equal(0);
+		});
+
+		it('should be able to set position to (0,0)', function(){
+			base.position({ x: 1, y: 2 });
+
+			base.position({ x: 0, y: 0 });
+
+			expect(base.x()).to.equal(0);
+			expect(base.y()).to.equal(0);
+		});
     });
 });
